@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Sign-up form start -->
+  <section class="newsletter">
+    <section class="newsletter-content">
+      <h1 class="newsletter__heading">Stay updated!</h1>
+      <p class="newsletter__message">Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul class="newsletter__feature-list">
+        <li class="newsletter__feature-item">Product discovery and building what matters</li>
+        <li class="newsletter__feature-item">Measuring to ensure updates are a success</li>
+        <li class="newsletter__feature-item">And much more!</li>
+      </ul>
+      <form class="newsletter__form">
+        <div class="label-container">
+          <label for="email">Email address</label>
+          <p class="error-message"></p>
+        </div>
+        <input type="email" name="email" id="input-email" placeholder="email@company.com">
+      </form>
+      <button class="btn btn-subscribe">
+        Subscribe to monthly newsletter
+      </button>
+    </section>
+    <picture class="newsletter-illustration">
+      <source media="(min-width:650px)" srcset="assets/images/illustration-sign-up-desktop.svg">
+      <source media="(min-width:465px)" srcset="assets/images/illustration-sign-up-mobile.svg">
+      <img src="assets/images/illustration-sign-up-mobile.svg"
+        alt="An illustration of a tablet device floating in the air with a browser window displaying statistics">
+    </picture>
+  </section>
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+
+  <section class="success-window">
+    <img src="assets/images/icon-success.svg" alt="Tick icon with a red background">
+    <h2>Thanks for subscribing!</h2>
+    <p>
+      A confirmation email has been sent to <span class="input-email"></span>.
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+    <button class="btn btn-dismiss-message">Dismiss message</button>
+  </section>
+
+  <!-- Success message end -->
+</body>
+
+</html>
